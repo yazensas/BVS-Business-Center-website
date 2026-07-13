@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BVS Business Center | Affordable Serviced Office Space for Rent in Al Barsha First, Dubai</title>
+<meta name="description" content="BVS Business Center offers affordable serviced office spaces in Al Barsha First Dubai. Rent small private offices from 100–270 sq. ft. with DEWA, Wi-Fi, AC, reception services, and Ejari included." />
+<meta name="keywords" content="Office Space for Rent in Al Barsha First Dubai, Serviced Office Dubai, Small Office for Rent in Dubai, Office Space with Ejari Dubai, Affordable Office Space Dubai" />
+<meta property="og:title" content="BVS Business Center | Serviced Offices in Al Barsha First, Dubai" />
+<meta property="og:description" content="Ready-to-use private office units from 100–270 sq. ft. with DEWA, Wi-Fi, AC, reception & Ejari included." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --navy:#0d2240;
+  --navy-2:#12315c;
+  --navy-deep:#081729;
+  --gold:#c9a227;
+  --gold-soft:#e2c463;
+  --ink:#1b2531;
+  --muted:#5c6b7e;
+  --line:#e7ebf1;
+  --bg:#ffffff;
+  --bg-soft:#f5f7fb;
+  --bg-tint:#eef2f8;
+  --white:#ffffff;
+  --radius:16px;
+  --shadow:0 10px 40px rgba(13,34,64,.08);
+  --shadow-lg:0 24px 60px rgba(13,34,64,.16);
+  --maxw:1200px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Plus Jakarta Sans',system-ui,sans-serif;
+  color:var(--ink);
+  background:var(--bg);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+h1,h2,h3,h4{line-height:1.15;color:var(--navy);font-weight:800;letter-spacing:-.02em}
+h2{font-size:clamp(1.8rem,3.4vw,2.7rem)}
+h3{font-size:1.25rem}
+p{color:var(--muted)}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.serif{font-family:'Playfair Display',serif;font-weight:700}
+.gold{color:var(--gold)}
+.center{text-align:center}
+.eyebrow{
+  display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--gold);margin-bottom:14px;
+}
+.section{padding:92px 0}
+.section-soft{background:var(--bg-soft)}
+.lead{font-size:1.08rem;max-width:640px}
+.center .lead{margin:0 auto}
+
+/* Buttons */
+.btn{
+  display:inline-flex;align-items:center;gap:9px;font-weight:700;font-size:.95rem;
+  padding:14px 26px;border-radius:50px;cursor:pointer;border:none;transition:.28s;
+  white-space:nowrap;
+}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold-soft));color:var(--navy-deep);box-shadow:0 8px 24px rgba(201,162,39,.35)}
+.btn-gold:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(201,162,39,.45)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy-2);transform:translateY(-3px)}
+.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.5)}
+.btn-ghost:hover{background:rgba(255,255,255,.12);border-color:#fff}
+.btn-outline{background:#fff;color:var(--navy);border:1.5px solid var(--line)}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-3px)}
+.btn-wa{background:#25d366;color:#fff}
+.btn-wa:hover{background:#1eb658;transform:translateY(-3px)}
+.btn-sm{padding:11px 20px;font-size:.88rem}
+
+/* Header */
+header{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  background:rgba(255,255,255,.86);backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);transition:.3s;
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{display:flex;align-items:center;gap:12px;cursor:pointer}
+.logo-mark{
+  width:44px;height:44px;border-radius:11px;display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--navy),var(--navy-2));
+  color:var(--gold);font-weight:800;font-size:1.15rem;letter-spacing:-.04em;
+  box-shadow:inset 0 0 0 1.5px rgba(201,162,39,.4);
+}
+.logo-txt strong{display:block;font-size:1.05rem;color:var(--navy);letter-spacing:-.02em;line-height:1.1}
+.logo-txt span{font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.nav-links{display:flex;align-items:center;gap:6px;list-style:none}
+.nav-links a{
+  font-weight:600;font-size:.94rem;color:var(--ink);padding:9px 15px;border-radius:8px;
+  transition:.2s;position:relative;cursor:pointer;
+}
+.nav-links a:hover{color:var(--gold)}
+.nav-links a.active{color:var(--navy)}
+.nav-links a.active::after{
+  content:"";position:absolute;left:15px;right:15px;bottom:2px;height:2px;
+  background:var(--gold);border-radius:2px;
+}
+.nav-cta{display:flex;align-items:center;gap:10px}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px}
+.burger span{width:24px;height:2.5px;background:var(--navy);border-radius:2px;transition:.3s}
+
+/* Pages */
+.page{display:none;animation:fade .5s ease}
+.page.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+
+/* Hero */
+.hero{
+  position:relative;min-height:96vh;display:flex;align-items:center;
+  color:#fff;padding:120px 0 70px;overflow:hidden;
+}
+.hero-bg{
+  position:absolute;inset:0;z-index:-2;
+  background:linear-gradient(120deg,rgba(8,23,41,.92),rgba(13,34,64,.72)),
+  url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1600&q=80') center/cover;
+}
+.hero-glow{position:absolute;top:-120px;right:-120px;width:520px;height:520px;border-radius:50%;
+  background:radial-gradient(circle,rgba(201,162,39,.28),transparent 70%);z-index:-1}
+.hero h1{color:#fff;font-size:clamp(2.3rem,5.2vw,4rem);max-width:900px;margin-bottom:22px}
+.hero p{color:rgba(255,255,255,.9);font-size:1.15rem;max-width:640px;margin-bottom:34px}
+.hero-btns{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:44px}
+.hero-stats{display:flex;flex-wrap:wrap;gap:40px}
+.hero-stats .num{font-size:2rem;font-weight:800;color:var(--gold);font-family:'Playfair Display',serif}
+.hero-stats .lbl{font-size:.85rem;color:rgba(255,255,255,.75)}
+.badge-strip{
+  display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.2);padding:8px 16px;border-radius:50px;
+  font-size:.85rem;font-weight:600;margin-bottom:26px;backdrop-filter:blur(6px);
+}
+.badge-strip .dot{width:8px;height:8px;border-radius:50%;background:#25d366;box-shadow:0 0 0 4px rgba(37,211,102,.25)}
+
+/* Grid helpers */
+.grid{display:grid;gap:26px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+
+/* Intro split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.split img{border-radius:var(--radius);box-shadow:var(--shadow-lg);width:100%;height:100%;object-fit:cover;max-height:460px}
+.img-frame{position:relative}
+.img-frame .tag{
+  position:absolute;bottom:-22px;left:-22px;background:var(--navy);color:#fff;
+  padding:18px 24px;border-radius:14px;box-shadow:var(--shadow-lg);
+}
+.img-frame .tag b{color:var(--gold);font-size:1.6rem;font-family:'Playfair Display',serif;display:block}
+.img-frame .tag span{font-size:.8rem;color:rgba(255,255,255,.8)}
+
+/* Cards */
+.card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;transition:.3s;
+}
+.card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:transparent}
+.card-img{height:210px;overflow:hidden;position:relative}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.card:hover .card-img img{transform:scale(1.07)}
+.card-pill{position:absolute;top:14px;left:14px;background:var(--gold);color:var(--navy-deep);
+  font-size:.72rem;font-weight:700;padding:6px 12px;border-radius:50px;text-transform:uppercase;letter-spacing:.05em}
+.card-pill.avail{background:#25d366;color:#fff}
+.card-body{padding:24px}
+.card-body h3{margin-bottom:6px}
+.price{font-size:1.5rem;font-weight:800;color:var(--navy);font-family:'Playfair Display',serif}
+.price span{font-size:.85rem;color:var(--muted);font-weight:600;font-family:'Plus Jakarta Sans'}
+.spec{display:flex;gap:18px;flex-wrap:wrap;margin:14px 0;padding:14px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.spec div{font-size:.85rem;color:var(--muted)}
+.spec b{display:block;color:var(--navy);font-size:.95rem}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:18px}
+.tags span{font-size:.75rem;background:var(--bg-tint);color:var(--navy-2);padding:5px 11px;border-radius:6px;font-weight:600}
+
+/* Feature cards */
+.feature{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px;transition:.3s}
+.feature:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:transparent}
+.f-ico{width:54px;height:54px;border-radius:13px;display:grid;place-items:center;font-size:1.5rem;
+  background:var(--bg-tint);margin-bottom:18px}
+.feature h3{margin-bottom:8px;font-size:1.12rem}
+.feature p{font-size:.95rem}
+
+/* Amenities */
+.amenity{display:flex;align-items:center;gap:13px;background:#fff;border:1px solid var(--line);
+  border-radius:12px;padding:16px 18px;font-weight:600;color:var(--navy);transition:.25s}
+.amenity:hover{border-color:var(--gold);transform:translateX(4px)}
+.amenity .ico{width:38px;height:38px;border-radius:9px;background:var(--navy);color:var(--gold);
+  display:grid;place-items:center;flex-shrink:0;font-size:1.1rem}
+
+/* Testimonials */
+.quote{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px;position:relative}
+.quote::before{content:"\201C";position:absolute;top:6px;left:22px;font-size:4.5rem;color:var(--gold);
+  font-family:'Playfair Display',serif;opacity:.35;line-height:1}
+.quote p{color:var(--ink);font-size:1rem;margin:18px 0;font-style:italic}
+.stars{color:var(--gold);letter-spacing:2px}
+.q-author{display:flex;align-items:center;gap:12px;margin-top:14px}
+.q-avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--navy-2));
+  color:var(--gold);display:grid;place-items:center;font-weight:700}
+.q-author b{color:var(--navy);font-size:.92rem}
+.q-author span{font-size:.8rem;color:var(--muted)}
+
+/* Why band */
+.band{background:linear-gradient(120deg,var(--navy-deep),var(--navy-2));color:#fff;position:relative;overflow:hidden}
+.band::after{content:"";position:absolute;bottom:-140px;left:-100px;width:400px;height:400px;border-radius:50%;
+  background:radial-gradient(circle,rgba(201,162,39,.2),transparent 70%)}
+.band h2,.band h3{color:#fff}
+.band .feature{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.12)}
+.band .feature p{color:rgba(255,255,255,.75)}
+.band .f-ico{background:rgba(201,162,39,.18)}
+
+/* CTA band */
+.cta-band{background:linear-gradient(120deg,var(--gold),var(--gold-soft));color:var(--navy-deep);text-align:center;padding:70px 0}
+.cta-band h2{color:var(--navy-deep)}
+.cta-band p{color:rgba(8,23,41,.75);max-width:560px;margin:14px auto 28px}
+.cta-band .btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+/* Forms */
+.form-wrap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:36px;box-shadow:var(--shadow)}
+.field{margin-bottom:18px}
+.field label{display:block;font-size:.85rem;font-weight:700;color:var(--navy);margin-bottom:7px}
+.field input,.field select,.field textarea{
+  width:100%;padding:13px 15px;border:1.5px solid var(--line);border-radius:10px;
+  font-family:inherit;font-size:.95rem;color:var(--ink);transition:.2s;background:#fff;
+}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,162,39,.15)}
+.field textarea{resize:vertical;min-height:110px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-note{font-size:.82rem;color:var(--muted);margin-top:12px;text-align:center}
+.form-ok{background:#e8f8ee;border:1px solid #b7e4c7;color:#1b7a43;padding:14px;border-radius:10px;
+  margin-top:16px;font-weight:600;font-size:.9rem;display:none}
+
+/* Contact info cards */
+.info-card{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--line);
+  border-radius:14px;padding:22px}
+.info-card .ico{width:46px;height:46px;border-radius:11px;background:var(--navy);color:var(--gold);
+  display:grid;place-items:center;flex-shrink:0;font-size:1.2rem}
+.info-card b{display:block;color:var(--navy);font-size:.95rem;margin-bottom:3px}
+.info-card span,.info-card a{font-size:.9rem;color:var(--muted)}
+.info-card a:hover{color:var(--gold)}
+
+/* Map */
+.map-wrap{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+.map-wrap iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+
+/* Page hero (inner) */
+.phero{background:linear-gradient(120deg,var(--navy-deep),var(--navy-2));color:#fff;padding:150px 0 70px;position:relative;overflow:hidden}
+.phero::after{content:"";position:absolute;top:-100px;right:-80px;width:360px;height:360px;border-radius:50%;
+  background:radial-gradient(circle,rgba(201,162,39,.22),transparent 70%)}
+.phero h1{color:#fff;font-size:clamp(2rem,4.5vw,3.2rem);position:relative}
+.phero p{color:rgba(255,255,255,.85);max-width:620px;margin-top:14px;position:relative}
+.crumb{font-size:.85rem;color:rgba(255,255,255,.7);margin-bottom:16px;position:relative}
+.crumb .gold{cursor:pointer}
+
+/* Filters */
+.filters{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;
+  box-shadow:var(--shadow);margin-bottom:36px;display:grid;grid-template-columns:repeat(4,1fr) auto;gap:16px;align-items:end}
+.filters .field{margin:0}
+.no-results{text-align:center;padding:50px;color:var(--muted);display:none;grid-column:1/-1}
+
+/* value list */
+.val{display:flex;gap:16px;align-items:flex-start;padding:22px 0;border-bottom:1px solid var(--line)}
+.val:last-child{border-bottom:none}
+.val .n{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--gold);font-weight:700;flex-shrink:0;width:44px}
+.val h3{margin-bottom:4px;font-size:1.1rem}
+.val p{font-size:.95rem}
+
+/* service list icons row */
+.check-list{list-style:none;display:grid;gap:12px}
+.check-list li{display:flex;gap:11px;align-items:flex-start;font-size:.97rem;color:var(--ink)}
+.check-list li .ck{color:var(--gold);font-weight:800;flex-shrink:0}
+
+/* Footer */
+footer{background:var(--navy-deep);color:rgba(255,255,255,.75);padding:66px 0 26px}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:40px;margin-bottom:44px}
+footer h4{color:#fff;font-size:1rem;margin-bottom:18px}
+footer .logo-txt strong{color:#fff}
+.foot-links{list-style:none;display:grid;gap:10px}
+.foot-links a{font-size:.9rem;color:rgba(255,255,255,.7);cursor:pointer}
+.foot-links a:hover{color:var(--gold)}
+.foot-contact{display:grid;gap:12px;font-size:.9rem}
+.foot-contact div{display:flex;gap:10px;align-items:flex-start}
+.socials{display:flex;gap:10px;margin-top:16px}
+.socials a{width:38px;height:38px;border-radius:10px;background:rgba(255,255,255,.08);display:grid;place-items:center;
+  color:#fff;transition:.25s}
+.socials a:hover{background:var(--gold);color:var(--navy-deep)}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display:flex;justify-content:space-between;
+  flex-wrap:wrap;gap:10px;font-size:.83rem;color:rgba(255,255,255,.5)}
+
+/* Floating WA */
+.wa-float{position:fixed;bottom:24px;right:24px;z-index:900;width:58px;height:58px;border-radius:50%;
+  background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 10px 30px rgba(37,211,102,.5);
+  animation:pulse 2.4s infinite;transition:.3s}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:30px;height:30px}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.5)}70%{box-shadow:0 0 0 16px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+
+/* Reveal on scroll */
+.reveal{opacity:0;transform:translateY(24px);transition:.7s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* Responsive */
+@media(max-width:960px){
+  .g4{grid-template-columns:repeat(2,1fr)}
+  .g3{grid-template-columns:repeat(2,1fr)}
+  .split{grid-template-columns:1fr;gap:36px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .filters{grid-template-columns:1fr 1fr}
+}
+@media(max-width:760px){
+  .nav-links,.nav-cta .btn{display:none}
+  .burger{display:flex}
+  .nav-links.open{display:flex;position:absolute;top:74px;left:0;right:0;flex-direction:column;
+    background:#fff;padding:16px;gap:4px;box-shadow:var(--shadow);border-bottom:1px solid var(--line)}
+  .nav-links.open a{padding:12px}
+  .section{padding:64px 0}
+  .g2,.g3,.g4{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .hero-stats{gap:26px}
+  .filters{grid-template-columns:1fr}
+  .img-frame .tag{left:14px;bottom:14px}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="container nav">
+    <div class="logo" onclick="go('home')">
+      <div class="logo-mark">BVS</div>
+      <div class="logo-txt"><strong>BVS Business Center</strong><span>Al Barsha First · Dubai</span></div>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a data-page="home" onclick="go('home')">Home</a></li>
+      <li><a data-page="about" onclick="go('about')">About</a></li>
+      <li><a data-page="services" onclick="go('services')">Services</a></li>
+      <li><a data-page="listing" onclick="go('listing')">Listings</a></li>
+      <li><a data-page="contact" onclick="go('contact')">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="btn btn-gold btn-sm" onclick="go('contact')">Book a Viewing</a>
+      <button class="burger" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HOME ============ -->
+<main>
+<section class="page active" id="home">
+  <div class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-glow"></div>
+    <div class="container">
+      <div class="badge-strip"><span class="dot"></span> Now leasing · Offices available in Al Barsha First</div>
+      <h1>Affordable Office Spaces for Rent in <span class="gold">Al Barsha First, Dubai</span></h1>
+      <p>Ready-to-use private office units from 100–270 sq. ft. with DEWA, Wi-Fi, AC, reception services, and Ejari included. Perfect for startups, SMEs, and businesses looking for a professional workspace in Dubai.</p>
+      <div class="hero-btns">
+        <a class="btn btn-gold" onclick="go('contact')">Book an Office Viewing →</a>
+        <a class="btn btn-ghost" onclick="go('contact')">Contact Us</a>
+        <a class="btn btn-wa" href="https://wa.me/97144478808" target="_blank" rel="noopener">WhatsApp Us</a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="num">100–270</div><div class="lbl">Sq. Ft. Private Offices</div></div>
+        <div><div class="num">All-Inclusive</div><div class="lbl">DEWA · Wi-Fi · AC</div></div>
+        <div><div class="num">Ejari</div><div class="lbl">Provided For Every Tenant</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Intro -->
+  <section class="section">
+    <div class="container split">
+      <div class="img-frame reveal">
+        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80" alt="Modern private office interior at BVS Business Center Dubai" />
+        <div class="tag"><b>Al Barsha 1</b><span>Prime Dubai location</span></div>
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Welcome to BVS</span>
+        <h2>Practical & Affordable Office Solutions in Dubai</h2>
+        <p style="margin:16px 0">BVS Business Center provides practical and affordable office solutions in Al Barsha First, Dubai. We offer private office units designed for businesses that need a professional workspace with essential services included.</p>
+        <p style="margin-bottom:26px">Our offices are ready to use, allowing companies to start operations quickly while enjoying a convenient business location — so you can focus on growth, productivity, and success.</p>
+        <a class="btn btn-navy" onclick="go('about')">Learn More About Us →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured offices -->
+  <section class="section section-soft">
+    <div class="container">
+      <div class="center" style="margin-bottom:52px">
+        <span class="eyebrow">Available Units</span>
+        <h2>Find the Right Office Space for Your Business</h2>
+        <p class="lead">Move-in-ready private offices with everything included. Choose the size that fits your team today and scale as you grow.</p>
+      </div>
+      <div class="grid g2" id="homeFeatured"></div>
+      <div class="center" style="margin-top:44px">
+        <a class="btn btn-outline" onclick="go('listing')">View All Available Offices →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why choose (band) -->
+  <section class="section band">
+    <div class="container" style="position:relative;z-index:1">
+      <div class="center" style="margin-bottom:52px">
+        <span class="eyebrow">The BVS Advantage</span>
+        <h2>Why Businesses Choose BVS Business Center</h2>
+      </div>
+      <div class="grid g3">
+        <div class="feature reveal"><div class="f-ico">📍</div><h3>Prime Location</h3><p>Al Barsha First, Dubai — convenient access to key business areas and Sheikh Zayed Road.</p></div>
+        <div class="feature reveal"><div class="f-ico">💰</div><h3>Affordable Solutions</h3><p>Professional offices without the high costs and commitments of traditional leasing.</p></div>
+        <div class="feature reveal"><div class="f-ico">🚀</div><h3>Ready-to-Use</h3><p>Move in and start working immediately — no fit-out, no delays.</p></div>
+        <div class="feature reveal"><div class="f-ico">✅</div><h3>All-Inclusive Essentials</h3><p>DEWA, Wi-Fi, AC, reception services and drinking water included.</p></div>
+        <div class="feature reveal"><div class="f-ico">📄</div><h3>Ejari Provided</h3><p>Every tenant receives Ejari documentation for their rented office unit.</p></div>
+        <div class="feature reveal"><div class="f-ico">🏢</div><h3>Professional Environment</h3><p>Clean, maintained common areas with a welcoming business atmosphere.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Amenities -->
+  <section class="section">
+    <div class="container">
+      <div class="center" style="margin-bottom:48px">
+        <span class="eyebrow">Amenities</span>
+        <h2>Everything You Need to Work Comfortably</h2>
+      </div>
+      <div class="grid g3" id="amenityGrid"></div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section section-soft">
+    <div class="container">
+      <div class="center" style="margin-bottom:48px">
+        <span class="eyebrow">Testimonials</span>
+        <h2>What Our Clients Say</h2>
+      </div>
+      <div class="grid g3" id="testiGrid"></div>
+    </div>
+  </section>
+
+  <!-- Location map -->
+  <section class="section">
+    <div class="container split">
+      <div class="reveal">
+        <span class="eyebrow">Location</span>
+        <h2>Prime Location in Al Barsha First, Dubai</h2>
+        <p style="margin:16px 0 22px">Conveniently located in the heart of Al Barsha First, giving your business a professional and accessible Dubai address.</p>
+        <ul class="check-list" style="margin-bottom:26px">
+          <li><span class="ck">✦</span> Easy access to Sheikh Zayed Road</li>
+          <li><span class="ck">✦</span> Close to public transportation</li>
+          <li><span class="ck">✦</span> Convenient for clients and employees</li>
+          <li><span class="ck">✦</span> Parking available for tenants and visitors</li>
+        </ul>
+        <a class="btn btn-navy" onclick="go('contact')">Get Directions →</a>
+      </div>
+      <div class="map-wrap reveal">
+        <iframe title="BVS Business Center location" loading="lazy" src="https://www.google.com/maps?q=373%2016A%20St%2C%20Al%20Barsha%20First%2C%20Dubai%2C%20UAE&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA -->
+  <section class="cta-band">
+    <div class="container">
+      <h2>Find Your Office Space Today</h2>
+      <p>Request availability, book a viewing, or message us on WhatsApp. Our team responds quickly and is happy to help you find the perfect fit.</p>
+      <div class="btns">
+        <a class="btn btn-navy" onclick="go('contact')">Request Office Availability</a>
+        <a class="btn btn-navy" onclick="go('contact')">Book a Viewing</a>
+        <a class="btn btn-wa" href="https://wa.me/97144478808" target="_blank" rel="noopener">WhatsApp Us</a>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="page" id="about">
+  <div class="phero">
+    <div class="container">
+      <div class="crumb"><span class="gold" onclick="go('home')">Home</span> / About</div>
+      <h1>About BVS Business Center</h1>
+      <p>Affordable, ready-to-use private office spaces built for businesses that want to establish and grow in Dubai — without the cost and complexity of traditional leasing.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container split">
+      <div class="reveal">
+        <span class="eyebrow">Company Overview</span>
+        <h2>A Professional Workspace, Made Simple</h2>
+        <p style="margin:16px 0">BVS Business Center provides affordable and practical office solutions for businesses in Al Barsha First, Dubai. We specialize in ready-to-use private office spaces ranging from 100 to 270 sq. ft., designed for startups, entrepreneurs, SMEs, and growing companies.</p>
+        <p>Our offices are created for businesses that need a professional workspace without the high costs and complexity of traditional office leasing. Each office includes essential services such as DEWA, Wi-Fi, air conditioning, shared reception services, drinking water, common area maintenance, and Ejari for every tenant.</p>
+      </div>
+      <div class="img-frame reveal">
+        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=80" alt="Professional shared workspace at BVS Business Center" />
+        <div class="tag"><b>100–270</b><span>Sq. ft. private offices</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container grid g2">
+      <div class="feature reveal"><div class="f-ico">🎯</div><h3>Our Mission</h3><p>To provide businesses with affordable, flexible, and professional office spaces that support their daily operations and growth. We simplify office leasing with ready-to-use workspaces and essential services included — so our tenants can focus on building and growing their businesses.</p></div>
+      <div class="feature reveal"><div class="f-ico">🔭</div><h3>Our Vision</h3><p>To become a trusted office space provider in Dubai by creating a professional environment where businesses can work efficiently, establish their presence, and achieve long-term success.</p></div>
+    </div>
+  </section>
+
+  <section class="section band">
+    <div class="container" style="position:relative;z-index:1">
+      <div class="center" style="margin-bottom:52px"><span class="eyebrow">Why Choose Us</span><h2>Why Choose BVS Business Center?</h2><p class="lead" style="color:rgba(255,255,255,.8)">We provide practical office solutions designed around the real needs of growing businesses.</p></div>
+      <div class="grid g3">
+        <div class="feature reveal"><div class="f-ico">💰</div><h3>Affordable Office Spaces</h3><p>Professional offices without the high costs of traditional leasing.</p></div>
+        <div class="feature reveal"><div class="f-ico">🚀</div><h3>Ready-to-Use Offices</h3><p>Move in quickly and start working immediately.</p></div>
+        <div class="feature reveal"><div class="f-ico">✅</div><h3>All-Inclusive Essentials</h3><p>DEWA, Wi-Fi, AC, reception services and drinking water included.</p></div>
+        <div class="feature reveal"><div class="f-ico">📄</div><h3>Ejari Provided</h3><p>Every tenant receives Ejari for their rented office unit.</p></div>
+        <div class="feature reveal"><div class="f-ico">📍</div><h3>Convenient Location</h3><p>Al Barsha First with easy access to Dubai's major business areas.</p></div>
+        <div class="feature reveal"><div class="f-ico">🏢</div><h3>Professional Environment</h3><p>A clean, comfortable, and business-friendly workplace.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="center" style="margin-bottom:20px"><span class="eyebrow">Our Values</span><h2>What We Stand For</h2></div>
+      <div style="max-width:820px;margin:0 auto">
+        <div class="val reveal"><div class="n">01</div><div><h3>Professionalism</h3><p>We maintain a professional environment where businesses can confidently meet clients and operate daily.</p></div></div>
+        <div class="val reveal"><div class="n">02</div><div><h3>Reliability</h3><p>We provide consistent office services and support to ensure a smooth working experience.</p></div></div>
+        <div class="val reveal"><div class="n">03</div><div><h3>Convenience</h3><p>We simplify office leasing by providing ready-to-use spaces with essential services included.</p></div></div>
+        <div class="val reveal"><div class="n">04</div><div><h3>Customer Focus</h3><p>We prioritize our tenants' needs and provide solutions that support their business goals.</p></div></div>
+        <div class="val reveal"><div class="n">05</div><div><h3>Value</h3><p>We offer practical office solutions that deliver quality, comfort, and affordability.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container split">
+      <div class="img-frame reveal">
+        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=900&q=80" alt="Reception and common area at BVS Business Center Dubai" />
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Strategic Location</span>
+        <h2>A Well-Connected Address in Al Barsha First</h2>
+        <p style="margin:16px 0">BVS Business Center is located in Al Barsha First, one of Dubai's well-connected business and residential areas, giving companies convenient access to important commercial areas, transportation links, and client destinations.</p>
+        <ul class="check-list">
+          <li><span class="ck">✦</span> Easy access to major roads</li>
+          <li><span class="ck">✦</span> Convenient for employees and clients</li>
+          <li><span class="ck">✦</span> Close to business districts and commercial areas</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <h2>A Workspace Designed for Business</h2>
+      <p>From well-maintained common areas to shared reception services, we help you present a professional image while you focus on operations and growth.</p>
+      <div class="btns"><a class="btn btn-navy" onclick="go('listing')">View Available Offices</a><a class="btn btn-navy" onclick="go('contact')">Book a Viewing</a></div>
+    </div>
+  </section>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="page" id="services">
+  <div class="phero">
+    <div class="container">
+      <div class="crumb"><span class="gold" onclick="go('home')">Home</span> / Services</div>
+      <h1>Our Services</h1>
+      <p>Everything a modern business needs under one roof — flexible offices, essential services, and the support to help you operate with ease in Dubai.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid g3" id="servicesGrid"></div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container split">
+      <div class="reveal">
+        <span class="eyebrow">All-Inclusive</span>
+        <h2>Included With Every Office Lease</h2>
+        <p style="margin:16px 0 22px">We take care of the essential workplace needs so you can focus on your business from day one.</p>
+        <ul class="check-list">
+          <li><span class="ck">✓</span> DEWA (electricity & water)</li>
+          <li><span class="ck">✓</span> High-speed Wi-Fi</li>
+          <li><span class="ck">✓</span> Air conditioning</li>
+          <li><span class="ck">✓</span> Shared reception area</li>
+          <li><span class="ck">✓</span> Complimentary drinking water</li>
+          <li><span class="ck">✓</span> Common area maintenance</li>
+          <li><span class="ck">✓</span> Ejari for every tenant</li>
+          <li><span class="ck">✓</span> Parking options for tenants & visitors</li>
+        </ul>
+      </div>
+      <div class="img-frame reveal">
+        <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80" alt="Team working in serviced office in Dubai" />
+        <div class="tag"><b>Move-in ready</b><span>Start operating today</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <h2>Ready to Set Up Your Office in Dubai?</h2>
+      <p>Tell us your team size and preferred office, and we'll recommend the right unit and share availability and pricing.</p>
+      <div class="btns"><a class="btn btn-navy" onclick="go('contact')">Request a Quote</a><a class="btn btn-wa" href="https://wa.me/97144478808" target="_blank" rel="noopener">WhatsApp Us</a></div>
+    </div>
+  </section>
+</section>
+
+<!-- ============ LISTING ============ -->
+<section class="page" id="listing">
+  <div class="phero">
+    <div class="container">
+      <div class="crumb"><span class="gold" onclick="go('home')">Home</span> / Listings</div>
+      <h1>Available Office Spaces</h1>
+      <p>Browse our ready-to-use private offices in Al Barsha First. Use the filters to find the size, price, and capacity that fit your business.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="filters">
+        <div class="field"><label>Office Size</label>
+          <select id="fSize" onchange="renderListings()">
+            <option value="">All sizes</option>
+            <option value="small">Small (up to 150 sq. ft.)</option>
+            <option value="medium">Medium (150–270 sq. ft.)</option>
+            <option value="large">Large (270+ sq. ft.)</option>
+          </select>
+        </div>
+        <div class="field"><label>Price Range</label>
+          <select id="fPrice" onchange="renderListings()">
+            <option value="">Any price</option>
+            <option value="low">Under AED 30,000/yr</option>
+            <option value="mid">AED 30,000–40,000/yr</option>
+            <option value="high">Above AED 40,000/yr</option>
+          </select>
+        </div>
+        <div class="field"><label>Capacity</label>
+          <select id="fCap" onchange="renderListings()">
+            <option value="">Any capacity</option>
+            <option value="1">1–2 people</option>
+            <option value="3">3–4 people</option>
+            <option value="5">5+ people</option>
+          </select>
+        </div>
+        <div class="field"><label>Availability</label>
+          <select id="fAvail" onchange="renderListings()">
+            <option value="">All</option>
+            <option value="available">Available now</option>
+            <option value="soon">Available soon</option>
+          </select>
+        </div>
+        <a class="btn btn-outline btn-sm" onclick="resetFilters()">Reset</a>
+      </div>
+      <div class="grid g3" id="listingGrid"></div>
+      <div class="no-results" id="noResults">No offices match your filters. <a class="gold" style="cursor:pointer" onclick="resetFilters()">Reset filters</a></div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <h2>Can't Decide? Let Us Help.</h2>
+      <p>Book a viewing and see the offices in person, or request more information and we'll get right back to you.</p>
+      <div class="btns"><a class="btn btn-navy" onclick="go('contact')">Book a Viewing</a><a class="btn btn-navy" onclick="go('contact')">Request More Information</a></div>
+    </div>
+  </section>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="page" id="contact">
+  <div class="phero">
+    <div class="container">
+      <div class="crumb"><span class="gold" onclick="go('home')">Home</span> / Contact</div>
+      <h1>Get in Touch</h1>
+      <p>Find your office space today. Request availability, book a viewing, or send us a message — we're happy to help.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container" style="display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:start">
+      <div class="form-wrap reveal">
+        <h2 style="font-size:1.6rem;margin-bottom:6px">Find Your Office Space Today</h2>
+        <p style="margin-bottom:24px">Fill in the form and our team will contact you with availability and pricing.</p>
+        <form onsubmit="return submitForm(event)">
+          <div class="form-row">
+            <div class="field"><label>Name *</label><input required type="text" placeholder="Your full name" /></div>
+            <div class="field"><label>Company Name</label><input type="text" placeholder="Your company" /></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label>Phone Number *</label><input required type="tel" placeholder="+971 5X XXX XXXX" /></div>
+            <div class="field"><label>Email *</label><input required type="email" placeholder="you@company.com" /></div>
+          </div>
+          <div class="field"><label>Preferred Office Size</label>
+            <select>
+              <option value="">Select an option</option>
+              <option>Small Private Office (100–150 sq. ft.)</option>
+              <option>Medium Private Office (150–270 sq. ft.)</option>
+              <option>Not sure — need advice</option>
+            </select>
+          </div>
+          <div class="field"><label>Message</label><textarea placeholder="Tell us about your requirements..."></textarea></div>
+          <div style="display:flex;flex-wrap:wrap;gap:12px">
+            <button type="submit" class="btn btn-gold">Request Office Availability</button>
+            <a class="btn btn-navy" onclick="go('listing')">Book a Viewing</a>
+            <a class="btn btn-wa" href="https://wa.me/97144478808" target="_blank" rel="noopener">WhatsApp Us</a>
+          </div>
+          <div class="form-ok" id="formOk">✓ Thank you! Your request has been received. Our team will contact you shortly.</div>
+          <p class="form-note">By submitting, you agree to be contacted by BVS Business Center regarding your inquiry.</p>
+        </form>
+      </div>
+
+      <div class="reveal" style="display:grid;gap:16px">
+        <div class="info-card"><div class="ico">📍</div><div><b>Visit Us</b><span>373 16A St – Al Barsha First – Al Barsha – Dubai, UAE</span></div></div>
+        <div class="info-card"><div class="ico">📞</div><div><b>Call Now</b><a href="tel:+97144478808">04 447 8808</a></div></div>
+        <div class="info-card"><div class="ico">✉️</div><div><b>Email</b><a href="mailto:info@sas-properties.com">info@sas-properties.com</a></div></div>
+        <div class="info-card"><div class="ico">💬</div><div><b>WhatsApp</b><a href="https://wa.me/97144478808" target="_blank" rel="noopener">Chat with us instantly</a></div></div>
+        <div class="info-card"><div class="ico">🕒</div><div><b>Business Hours</b><span>Monday–Saturday · 9:00 AM – 5:00 PM</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft" style="padding-top:0">
+    <div class="container">
+      <div class="map-wrap" style="height:400px">
+        <iframe title="BVS Business Center map" loading="lazy" src="https://www.google.com/maps?q=Al+Barsha+First+Dubai&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="logo" style="margin-bottom:16px"><div class="logo-mark">BVS</div><div class="logo-txt"><strong>BVS Business Center</strong><span>Al Barsha First · Dubai</span></div></div>
+        <p style="color:rgba(255,255,255,.65);font-size:.92rem;max-width:320px">Affordable serviced office spaces from 100–270 sq. ft. with DEWA, Wi-Fi, AC, reception & Ejari included — built for startups, SMEs and growing businesses in Dubai.</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="LinkedIn">in</a><a href="https://wa.me/97144478808" aria-label="WhatsApp" target="_blank" rel="noopener">wa</a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="foot-links">
+          <li><a onclick="go('home')">Home</a></li><li><a onclick="go('about')">About</a></li>
+          <li><a onclick="go('services')">Services</a></li><li><a onclick="go('listing')">Listings</a></li>
+          <li><a onclick="go('contact')">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul class="foot-links">
+          <li><a onclick="go('services')">Private Office Leasing</a></li><li><a onclick="go('services')">Serviced Offices</a></li>
+          <li><a onclick="go('services')">Meeting Room</a></li><li><a onclick="go('services')">Reception Services</a></li>
+          <li><a onclick="go('services')">Business Support</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <div class="foot-contact">
+          <div>📍 373 16A St, Al Barsha First, Dubai, UAE</div>
+          <div>📞 <a href="tel:+97144478808" style="color:rgba(255,255,255,.75)">04 447 8808</a></div>
+          <div>✉️ <a href="mailto:info@sas-properties.com" style="color:rgba(255,255,255,.75)">info@sas-properties.com</a></div>
+          <div>🕒 Mon–Sat · 9:00 AM – 5:00 PM</div>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr"></span> BVS Business Center. All rights reserved.</span>
+      <span>Serviced Offices · Al Barsha First · Dubai</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/97144478808" target="_blank" rel="noopener" aria-label="WhatsApp us">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.2-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.1 3.2 5 4.5.7.3 1.2.5 1.7.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.2-.6-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+</a>
+
+<script>
+/* ---------- Data ---------- */
+const amenities=[
+  ["🏢","Ready-to-use office spaces"],["⚡","DEWA (electricity & water) included"],
+  ["📶","High-speed Wi-Fi"],["❄️","Air conditioning"],
+  ["🛎️","Shared reception area"],["💧","Drinking water service"],
+  ["🧹","Common area maintenance"],["📄","Ejari provided"],["🅿️","Parking options available"]
+];
+const testimonials=[
+  ["Moving into BVS Business Center was simple and convenient. The office was ready immediately, and having Ejari included made the process much easier.","Rania K.","Startup Founder"],
+  ["The location in Al Barsha First is perfect for meeting clients. Everything from Wi-Fi to reception is handled, so we just focus on work.","Ahmed S.","SME Owner"],
+  ["Great value for a professional office in Dubai. Clean common areas, friendly reception, and an easy move-in — highly recommend.","Priya M.","Consultant"]
+];
+const services=[
+  ["🏢","Private Office Leasing","Fully private, lockable office units from 100–270 sq. ft. — your own dedicated space in a professional building."],
+  ["🛎️","Serviced Offices","Offices with essential services managed for you: utilities, internet, AC, cleaning and reception all included."],
+  ["🪑","Furnished Office Spaces","Move-in-ready offices so you can start operating from day one without buying furniture or fitting out."],
+  ["👥","Meeting Room","Professional space to meet clients and hold team discussions in a business-appropriate setting."],
+  ["📞","Reception Services","A shared, staffed reception area that welcomes your visitors and supports a professional first impression."],
+  ["📶","High-Speed Internet","Reliable, high-speed Wi-Fi throughout the center to keep your team connected and productive."],
+  ["🤝","Business Support Services","Practical support including Ejari documentation and common-area upkeep to help you establish in Dubai."]
+];
+const offices=[
+  {name:"Office Unit 09 · 1st Floor",img:"https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800&q=80",size:"small",sqft:"107 sq. ft.",price:28000,cap:2,capText:"1–2 people",avail:"available",tags:["Furnished","No window","No balcony","DEWA","Wi-Fi","AC","Reception","Ejari"]},
+  {name:"Office Unit 10 · 1st Floor",img:"https://images.unsplash.com/photo-1604328698692-f76ea9498e76?auto=format&fit=crop&w=800&q=80",size:"small",sqft:"132 sq. ft.",price:32000,cap:2,capText:"2 people",avail:"available",tags:["Furnished","Window","Balcony","DEWA","Wi-Fi","AC","Reception","Ejari"]},
+  {name:"Office Unit 04 · 2nd Floor",img:"https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80",size:"medium",sqft:"212 sq. ft.",price:39000,cap:4,capText:"3–4 people",avail:"available",tags:["Furnished","Window","No balcony","DEWA","Wi-Fi","AC","Reception","Ejari"]},
+  {name:"Office Unit 14 · 2nd Floor",img:"https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80",size:"large",sqft:"345 sq. ft.",price:45000,cap:6,capText:"5–6 people",avail:"available",tags:["Furnished","Panoramic view","Balcony","DEWA","Wi-Fi","AC","Reception","Ejari"]}
+];
+
+/* ---------- Card builders ---------- */
+function officeCard(o){
+  const badge=o.avail==='available'?'<span class="card-pill avail">Available Now</span>':'<span class="card-pill">Available Soon</span>';
+  return `<div class="card reveal in">
+    <div class="card-img">${badge}<img loading="lazy" src="${o.img}" alt="${o.name}"></div>
+    <div class="card-body">
+      <h3>${o.name}</h3>
+      <div class="price">AED ${o.price.toLocaleString()}<span> /year</span></div>
+      <div class="spec"><div><b>${o.sqft}</b>Size</div><div><b>${o.capText}</b>Capacity</div><div><b>Private</b>Unit type</div></div>
+      <div class="tags">${o.tags.map(t=>`<span>${t}</span>`).join('')}</div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <a class="btn btn-gold btn-sm" onclick="go('contact')">Book a Viewing</a>
+        <a class="btn btn-outline btn-sm" onclick="go('contact')">More Info</a>
+      </div>
+    </div></div>`;
+}
+
+/* ---------- Render ---------- */
+function renderStatic(){
+  document.getElementById('amenityGrid').innerHTML=amenities.map(a=>
+    `<div class="amenity reveal in"><div class="ico">${a[0]}</div>${a[1]}</div>`).join('');
+  document.getElementById('testiGrid').innerHTML=testimonials.map(t=>
+    `<div class="quote reveal in"><div class="stars">★★★★★</div><p>${t[0]}</p>
+     <div class="q-author"><div class="q-avatar">${t[1][0]}</div><div><b>${t[1]}</b><span>${t[2]}</span></div></div></div>`).join('');
+  document.getElementById('servicesGrid').innerHTML=services.map(s=>
+    `<div class="feature reveal in"><div class="f-ico">${s[0]}</div><h3>${s[1]}</h3><p>${s[2]}</p></div>`).join('');
+  document.getElementById('homeFeatured').innerHTML=[offices[0],offices[3]].map(officeCard).join('');
+  renderListings();
+}
+function renderListings(){
+  const s=fSize.value,p=fPrice.value,c=fCap.value,a=fAvail.value;
+  const out=offices.filter(o=>{
+    if(s&&o.size!==s)return false;
+    if(a&&o.avail!==a)return false;
+    if(p==='low'&&o.price>=30000)return false;
+    if(p==='mid'&&(o.price<30000||o.price>40000))return false;
+    if(p==='high'&&o.price<=40000)return false;
+    if(c==='1'&&o.cap>2)return false;
+    if(c==='3'&&(o.cap<3||o.cap>4))return false;
+    if(c==='5'&&o.cap<5)return false;
+    return true;
+  });
+  document.getElementById('listingGrid').innerHTML=out.map(officeCard).join('');
+  document.getElementById('noResults').style.display=out.length?'none':'block';
+}
+function resetFilters(){fSize.value='';fPrice.value='';fCap.value='';fAvail.value='';renderListings();}
+
+/* ---------- Router ---------- */
+function go(page){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById(page).classList.add('active');
+  document.querySelectorAll('.nav-links a').forEach(a=>a.classList.toggle('active',a.dataset.page===page));
+  window.scrollTo({top:0,behavior:'instant'in window?'instant':'auto'});
+  document.getElementById('navLinks').classList.remove('open');
+  location.hash=page;
+  setTimeout(observeReveal,50);
+}
+function toggleMenu(){document.getElementById('navLinks').classList.toggle('open');}
+function submitForm(e){e.preventDefault();document.getElementById('formOk').style.display='block';e.target.reset();return false;}
+
+/* ---------- Scroll reveal ---------- */
+let io;
+function observeReveal(){
+  const els=document.querySelectorAll('.page.active .reveal:not(.in)');
+  if(!io){io=new IntersectionObserver((ents)=>{ents.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});},{threshold:.12});}
+  els.forEach(el=>io.observe(el));
+}
+window.addEventListener('scroll',()=>{document.querySelector('header').style.boxShadow=window.scrollY>10?'0 4px 24px rgba(13,34,64,.08)':'none';});
+
+/* ---------- Init ---------- */
+document.getElementById('yr').textContent=new Date().getFullYear();
+renderStatic();
+const start=(location.hash||'#home').slice(1);
+if(document.getElementById(start))go(start);else go('home');
+observeReveal();
+</script>
+</body>
+</html>
