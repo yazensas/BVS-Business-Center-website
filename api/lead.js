@@ -64,6 +64,8 @@ module.exports = async function handler(req, res) {
     // Row values in the exact COLUMNS order.
     const row = [timestamp, name, phone, service, message, source, gclid];
 
+    console.log('Trying to save to Google Sheet:', process.env.GOOGLE_SHEET_ID);
+    
     await sheets.spreadsheets.values.append({
       spreadsheetId: process.env.GOOGLE_SHEET_ID,
       range: `${tab}!A:G`,
@@ -71,6 +73,8 @@ module.exports = async function handler(req, res) {
       insertDataOption: 'INSERT_ROWS',
       requestBody: { values: [row] },
     });
+    
+    console.log('Google Sheet save completed');
 
     // --- 2. Send notification email via Resend ------------------------------
     // Email failure should not lose the lead (it's already in the sheet),
