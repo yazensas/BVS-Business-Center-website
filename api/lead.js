@@ -24,6 +24,7 @@ const { Resend } = require('resend');
 const COLUMNS = ['Timestamp', 'Name', 'Phone', 'Service', 'Message', 'Source', 'gclid'];
 
 module.exports = async function handler(req, res) {
+  console.log('LEAD API CALLED', req.method);
   // Only allow POST.
   if (req.method !== 'POST') {
     res.setHeader('Allow', 'POST');
