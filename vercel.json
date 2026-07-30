@@ -1,7 +1,5 @@
 {
   "functions": {
-    "api/lead.js": {
-      "runtime": "nodejs22.x"
-    }
+    "api/lead.js": {}
   }
 }
