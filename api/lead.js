@@ -83,6 +83,10 @@ module.exports = async function handler(req, res) {
     let emailSent = false;
     try {
       const resend = new Resend(process.env.RESEND_API_KEY);
+
+      console.log('Starting Resend email...');
+      console.log('Has Resend key:', !!process.env.RESEND_API_KEY);
+      
       const to = process.env.NOTIFICATION_EMAIL || 'info@sas-properties.com';
       const LEAD_FROM = 'onboarding@resend.dev';
       const from = LEAD_FROM;
@@ -93,6 +97,8 @@ module.exports = async function handler(req, res) {
           .replace(/</g, '&lt;')
           .replace(/>/g, '&gt;');
 
+      console.log('Calling Resend API...');
+      
       await resend.emails.send({
         from: `BVS Website Leads <${from}>`,
         to: to.split(',').map((s) => s.trim()).filter(Boolean),
@@ -114,6 +120,7 @@ module.exports = async function handler(req, res) {
         `,
       });
       emailSent = true;
+      console.log('Resend email sent successfully');
     } catch (mailErr) {
       console.error('Resend email failed:', mailErr);
     }
