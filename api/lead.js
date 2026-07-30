@@ -88,7 +88,7 @@ module.exports = async function handler(req, res) {
       console.log('Has Resend key:', !!process.env.RESEND_API_KEY);
       
       const to = process.env.NOTIFICATION_EMAIL || 'info@sas-properties.com';
-      const LEAD_FROM = 'onboarding@resend.dev';
+      const LEAD_FROM = 'leads@bvsbusinesscenter.com';
       const from = LEAD_FROM;
 
       const esc = (s) =>
