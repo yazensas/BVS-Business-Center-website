@@ -21,7 +21,20 @@ const { google } = require('googleapis');
 const { Resend } = require('resend');
 
 // Column order MUST match the sheet header row exactly.
-const COLUMNS = ['Timestamp', 'Name', 'Phone', 'Service', 'Message', 'Source', 'gclid'];
+const COLUMNS = [
+  'Timestamp',
+  'Name',
+  'Phone',
+  'Service',
+  'Message',
+  'Source',
+  'gclid',
+  'utm_source',
+  'utm_medium',
+  'utm_campaign',
+  'utm_term',
+  'utm_content'
+];
 
 module.exports = async function handler(req, res) {
   console.log('LEAD API CALLED', req.method);
@@ -44,6 +57,11 @@ module.exports = async function handler(req, res) {
     const source = (body.source || '').toString().trim();
     const gclid = (body.gclid || '').toString().trim();
 
+    const utm_source = (body.utm_source || '').toString().trim();
+    const utm_medium = (body.utm_medium || '').toString().trim();
+    const utm_campaign = (body.utm_campaign || '').toString().trim();
+    const utm_term = (body.utm_term || '').toString().trim();
+    const utm_content = (body.utm_content || '').toString().trim();
     // Minimal validation: Name and Phone are required.
     if (!name || !phone) {
       return res.status(400).json({ ok: false, error: 'Name and phone are required.' });
@@ -63,13 +81,26 @@ module.exports = async function handler(req, res) {
     const tab = process.env.LEAD_SHEET_TAB || 'Leads';
 
     // Row values in the exact COLUMNS order.
-    const row = [timestamp, name, phone, service, message, source, gclid];
+    const row = [
+    timestamp,
+    name,
+    phone,
+    service,
+    message,
+    source,
+    gclid,
+    utm_source,
+    utm_medium,
+    utm_campaign,
+    utm_term,
+    utm_content
+    ];
 
     console.log('Trying to save to Google Sheet:', process.env.GOOGLE_SHEET_ID);
     
     await sheets.spreadsheets.values.append({
       spreadsheetId: process.env.GOOGLE_SHEET_ID,
-      range: `${tab}!A:G`,
+      range: `${tab}!A:L`,
       valueInputOption: 'USER_ENTERED',
       insertDataOption: 'INSERT_ROWS',
       requestBody: { values: [row] },
