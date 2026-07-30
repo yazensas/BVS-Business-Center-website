@@ -886,17 +886,46 @@ function go(page){
 function toggleMenu(){document.getElementById('navLinks').classList.toggle('open');}
 // Capture Google Ads click id (gclid) and traffic source on page load,
 // persisting gclid across pages via sessionStorage.
+// Capture Google Ads click id (gclid) and UTM traffic data on page load.
 (function captureTracking(){
   try{
-    var params=new URLSearchParams(window.location.search);
-    var gclid=params.get('gclid');
-    if(gclid){sessionStorage.setItem('gclid',gclid);}
-    else{gclid=sessionStorage.getItem('gclid')||'';}
-    var g=document.getElementById('leadGclid');
-    if(g){g.value=gclid;}
-    var s=document.getElementById('leadSource');
-    if(s){s.value=params.get('utm_source')||document.referrer||'direct';}
-  }catch(err){/* non-blocking */}
+    var params = new URLSearchParams(window.location.search);
+
+    // Capture Google Ads click ID
+    var gclid = params.get('gclid');
+    if(gclid){
+      sessionStorage.setItem('gclid', gclid);
+    } else {
+      gclid = sessionStorage.getItem('gclid') || '';
+    }
+
+    var g = document.getElementById('leadGclid');
+    if(g){ g.value = gclid; }
+
+    // Capture source
+    var source = params.get('utm_source') || document.referrer || 'direct';
+    var s = document.getElementById('leadSource');
+    if(s){ s.value = source; }
+
+    // Capture UTM fields
+    var fields = {
+      leadUtmSource: 'utm_source',
+      leadUtmMedium: 'utm_medium',
+      leadUtmCampaign: 'utm_campaign',
+      leadUtmTerm: 'utm_term',
+      leadUtmContent: 'utm_content'
+    };
+
+    Object.keys(fields).forEach(function(id){
+      var el = document.getElementById(id);
+      if(el){
+        el.value = params.get(fields[id]) || '';
+      }
+    });
+
+  }catch(err){
+    console.log('Tracking error:', err);
+  }
 })();
 
 async function submitForm(e){
