@@ -961,14 +961,9 @@ async function submitForm(e){
 if (!res.ok) {
   throw new Error('Request failed');
 }
+    form.reset();
 
-// Google Ads conversion tracking
-gtag('event', 'conversion', {
-  'send_to': 'AW-18275056710/UaDKCNDGzNkcEMb4nIpE',
-  'event_callback': function () {
-    window.location.href = '/thank-you.html';
-  }
-});
+window.location.href = '/thank-you.html';
 
 // Backup redirect in case callback does not fire
 setTimeout(function () {
