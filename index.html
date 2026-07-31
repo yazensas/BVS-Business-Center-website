@@ -943,9 +943,14 @@ async function submitForm(e){
       headers:{'Content-Type':'application/json'},
       body:JSON.stringify(data)
     });
-    if(!res.ok){throw new Error('Request failed');}
-    okBox.style.display='block';
-    form.reset();
+    if (!res.ok) {
+  throw new Error('Request failed');
+}
+
+form.reset();
+
+// Redirect to a confirmation page
+window.location.href = '/thank-you.html';
   }catch(err){
     errBox.style.display='block';
   }finally{
