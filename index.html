@@ -964,13 +964,19 @@ if (!res.ok) {
 
 // Google Ads conversion tracking
 gtag('event', 'conversion', {
-  'send_to': 'AW-18275056710/UaDKCNDGzNkcEMb4nIpE'
+  'send_to': 'AW-18275056710/UaDKCNDGzNkcEMb4nIpE',
+  'event_callback': function () {
+    window.location.href = '/thank-you.html';
+  }
 });
+
+// Backup redirect in case callback does not fire
+setTimeout(function () {
+  window.location.href = '/thank-you.html';
+}, 2000);
 
 form.reset();
 
-// Redirect to a confirmation page
-window.location.href = '/thank-you.html';
   }catch(err){
     errBox.style.display='block';
   }finally{
