@@ -952,14 +952,20 @@ async function submitForm(e){
   btn.disabled=true;var label=btn.textContent;btn.textContent='Sending...';
   try{
     var data=Object.fromEntries(new FormData(form).entries());
-    var res=await fetch('/api/lead',{
-      method:'POST',
-      headers:{'Content-Type':'application/json'},
-      body:JSON.stringify(data)
-    });
-    if (!res.ok) {
+    var res = await fetch('/api/lead', {
+  method: 'POST',
+  headers: {'Content-Type':'application/json'},
+  body: JSON.stringify(data)
+});
+
+if (!res.ok) {
   throw new Error('Request failed');
 }
+
+// Google Ads conversion tracking
+gtag('event', 'conversion', {
+  'send_to': 'AW-18275056710/UaDKCNDGzNkcEMb4nIpE'
+});
 
 form.reset();
 
